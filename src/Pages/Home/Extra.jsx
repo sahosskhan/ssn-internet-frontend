@@ -1,0 +1,104 @@
+import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
+const Extra = () => {
+  // FAQ data
+  const faqData = [
+    { q: "আপনার সেবার কভারেজ কি আছে?", a: "আমাদের সেবা দেশের অনেক অঞ্চলে পাওয়া যায়।" },
+    { q: "সার্ভিস রিস্টোরেশন কতো সময় লাগে?", a: "সাধারণত ২৪ ঘণ্টার মধ্যে।" },
+    { q: "পেমেন্ট অপশন কি কি?", a: "বিকাশ, নগদ, ব্যাংক ট্রান্সফার সবই পাওয়া যায়।" },
+    { q: "কাস্টমার সাপোর্ট কতো সময় কাজ করে?", a: "২৪/৭ আমাদের টিম সাহায্য করে।" },
+    { q: "ফ্রি ইন্সটলেশন আছে কি?", a: "হ্যাঁ, নির্দিষ্ট এলাকায় ফ্রি ইন্সটলেশন।" },
+    { q: "প্যাকেজ পরিবর্তন সম্ভব কি?", a: "হ্যাঁ, যেকোনো সময় প্যাকেজ পরিবর্তন করতে পারবেন।" },
+    { q: "ইন্টারনেট স্পিড কত?", a: "আপনার এলাকার জন্য নির্ধারিত ১২-২০ Mbps।" },
+    { q: "কানেকশন স্থাপনের জন্য কি লাগবে?", a: "একটি ঠিকানা এবং আইডি ভেরিফিকেশন যথেষ্ট।" },
+  ];
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  // Why Choose Us features
+  const features = [
+    "২৪/৭ কাস্টমার সাপোর্ট",
+    "FTTH প্রযুক্তি",
+    "সুরক্ষিত এবং প্রাইভেসি ফ্রেন্ডলি",
+    "স্মার্ট বিল পেমেন্ট সিস্টেম",
+    "ফেসবুক এবং ইউটিউবের জন্য অতিরিক্ত BDIX স্পিড",
+    "সেলফ কেয়ার পোর্টাল",
+  ];
+
+  // More services
+  const services = [
+    "Live TV Streaming",
+    "OTT Platforms",
+    "FTP Server Access",
+    "Smart Home Integration",
+    "Cloud Storage Solutions",
+    "Gaming Acceleration",
+    "IoT Support",
+    "Priority Support",
+  ];
+
+  return (
+    <div>
+          {/* Why Choose Us Section */}
+      <section className="py-16 px-6 bg-gradient-to-b from-[#0b1320] via-[#111b2f] to-[#0b1320]">
+        <h2 className="text-4xl font-bold text-center text-white mb-10">Why Choose Us</h2>
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+          {features.map((f, i) => (
+            <div
+              key={i}
+              className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex items-center justify-center text-white font-medium hover:scale-[1.03] transition shadow-lg"
+            >
+              {f}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* More Services Section */}
+      <section className="py-16 px-6">
+        <h2 className="text-4xl font-bold text-center text-white mb-10">Our Services</h2>
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {services.map((s, i) => (
+            <div
+              key={i}
+              className="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center text-white font-semibold hover:scale-[1.05] transition shadow-lg"
+            >
+              {s}
+            </div>
+          ))}
+        </div>
+      </section>
+      
+      {/* FAQ Section */}
+      <section className="py-16 px-6">
+        <h2 className="text-4xl font-bold text-center text-white mb-10">FAQ</h2>
+        <div className="max-w-4xl mx-auto grid gap-4">
+          {faqData.map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-white/10 backdrop-blur-md rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:scale-[1.02] shadow-lg"
+              onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+            >
+              <div className="flex justify-between items-center">
+                <h3 className="text-white font-medium">{item.q}</h3>
+                <ChevronDown
+                  className={`text-white transition-transform ${
+                    openIndex === idx ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              {openIndex === idx && (
+                <p className="mt-2 text-gray-300 transition-all duration-300">{item.a}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+    
+    </div>
+  );
+};
+
+export default Extra;

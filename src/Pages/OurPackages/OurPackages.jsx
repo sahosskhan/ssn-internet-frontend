@@ -1,15 +1,10 @@
-import {
-  PhoneCall,
-  Stethoscope,
-  Globe,
-} from "lucide-react";
 
 const packages = [
   {
     name: "Earth",
     price: 500,
     speed: "12 Mbps",
-    talktime: "Free",
+    talktime: "50 min",
     telemedicine: "Free",
     bongo: "No",
     chorki: "No",
@@ -19,7 +14,7 @@ const packages = [
     name: "Earth Plus",
     price: 525,
     speed: "15 Mbps",
-    talktime: "Free",
+    talktime: "75 min",
     telemedicine: "Free",
     bongo: "No",
     chorki: "No",
@@ -27,29 +22,39 @@ const packages = [
   },
   {
     name: "Sun",
-    price: 700,
+    price: 600,
     speed: "20 Mbps",
-    talktime: "Free",
+    talktime: "100 min",
     telemedicine: "Free",
-    bongo: "No",
+    bongo: "Free",
     chorki: "No",
     realIp: "No",
   },
   {
     name: "Haumea",
-    price: 800,
+    price: 650,
     speed: "25 Mbps",
-    talktime: "Free",
+    talktime: "150 min",
     telemedicine: "Free",
-    bongo: "No",
+    bongo: "Free",
+    chorki: "No",
+    realIp: "No",
+  },
+    {
+    name: "Mercury",
+    price:750,
+    speed: "35 Mbps",
+    talktime: "200 min",
+    telemedicine: "Free",
+    bongo: "Free",
     chorki: "No",
     realIp: "No",
   },
   {
     name: "Venus",
     price: 1000,
-    speed: "35 Mbps",
-    talktime: "Free",
+    speed: "50 Mbps",
+    talktime: "250 min",
     telemedicine: "Free",
     bongo: "Free",
     chorki: "Free",
@@ -57,9 +62,9 @@ const packages = [
   },
   {
     name: "Comets",
-    price: 1250,
-    speed: "50 Mbps",
-    talktime: "Free",
+    price: 1200,
+    speed: "65 Mbps",
+    talktime: "300 min",
     telemedicine: "Free",
     bongo: "Free",
     chorki: "Free",
@@ -68,8 +73,8 @@ const packages = [
   {
     name: "Mars",
     price: 1500,
-    speed: "100 Mbps",
-    talktime: "Free",
+    speed: "80 Mbps",
+    talktime: "400 min",
     telemedicine: "Free",
     bongo: "Free",
     chorki: "Free",
@@ -78,8 +83,8 @@ const packages = [
   {
     name: "Jupiter",
     price: 1750,
-    speed: "150 Mbps",
-    talktime: "Free",
+    speed: "90 Mbps",
+    talktime: "450 min",
     telemedicine: "Free",
     bongo: "Free",
     chorki: "Free",
@@ -88,8 +93,8 @@ const packages = [
   {
     name: "Moon",
     price: 2000,
-    speed: "550 Mbps",
-    talktime: "Free",
+    speed: "100 Mbps",
+    talktime: "550 min",
     telemedicine: "Free",
     bongo: "Free",
     chorki: "Free",
@@ -202,32 +207,36 @@ const OurPackages = () => {
               {/* Price */}
               <p className="text-4xl font-extrabold mt-4 text-white">
                 ৳{pkg.price}
-                <span className="text-sm font-medium text-gray-400"> /mo</span>
+                <span className="text-sm font-medium text-gray-400"> /month</span>
               </p>
 
               {/* Speed */}
               <p className="mt-2 text-lg text-indigo-200 font-semibold">{pkg.speed}</p>
 
               {/* Features */}
-              <ul className="mt-6 space-y-3 text-sm text-gray-300">
-                {features.map((f, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-center justify-between bg-white/5 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/10"
-                  >
-                    <span className="flex items-center gap-2 font-medium">
-                      {f.icon} {f.label}
-                    </span>
-                    <span
-                      className={`font-semibold ${
-                        pkg[f.key] === "Free" ? "text-green-400" : "text-red-400"
-                      }`}
-                    >
-                      {pkg[f.key]}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+            <ul className="mt-6 space-y-3 text-sm text-gray-300">
+  {features.map((f, idx) => {
+    // Determine color
+    let valueColor = "text-green-400"; // default green
+    if (f.key !== "talktime") {
+      valueColor = pkg[f.key] === "Free" ? "text-green-400" : "text-red-500";
+    }
+    
+    return (
+      <li
+        key={idx}
+        className="flex items-center justify-between bg-white/5 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/10"
+      >
+        <span className="flex items-center gap-2 font-medium">
+          {f.icon} {f.label}
+        </span>
+        <span className={`font-semibold ${valueColor}`}>
+          {pkg[f.key]}
+        </span>
+      </li>
+    );
+  })}
+</ul>
 
               {/* Button */}
                <button

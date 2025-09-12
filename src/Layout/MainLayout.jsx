@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Pages/Shared/Navbar";
+import ChatButton from "../Pages/Home/ChatBtn";
 
 
 const MainLayout = () => {
@@ -7,6 +8,7 @@ const MainLayout = () => {
         <div>
             <Navbar/>
             <Outlet></Outlet>
+            <ChatButton/>
         </div>
     );
 };
