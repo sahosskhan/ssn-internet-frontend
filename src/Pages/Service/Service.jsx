@@ -16,7 +16,7 @@ const Service = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           {/* FTP Servers */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl animate-wave shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <Server className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">FTP Servers</h3>
@@ -31,7 +31,7 @@ const Service = () => {
           </div>
 
           {/* Live TV */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 animate-wave rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <Tv className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">Live TV</h3>
@@ -46,7 +46,7 @@ const Service = () => {
           </div>
 
           {/* OTT Services */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 animate-wave rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <Film className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">OTT Platforms</h3>
@@ -61,7 +61,7 @@ const Service = () => {
           </div>
 
           {/* Smart Bill Payment */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 animate-wave rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <CreditCard className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">Smart Bill Payment</h3>
@@ -72,7 +72,7 @@ const Service = () => {
           </div>
 
           {/* 24/7 Support */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md animate-wave p-6 rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <Headphones className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">24/7 Support</h3>
@@ -83,7 +83,7 @@ const Service = () => {
           </div>
 
           {/* FTTH Technology */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 animate-wave rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <Wifi className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">FTTH Technology</h3>
@@ -94,7 +94,7 @@ const Service = () => {
           </div>
 
           {/* Self Care Portal */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6  animate-wave rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <UserCheck className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">Self Care Portal</h3>
@@ -105,7 +105,7 @@ const Service = () => {
           </div>
 
           {/* Security & Privacy */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 animate-wave rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <Shield className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">Secure & Private</h3>
@@ -116,7 +116,7 @@ const Service = () => {
           </div>
 
           {/* BDIX Extra Speed */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 animate-wave rounded-2xl shadow-lg hover:scale-105 transition">
             <div className="flex items-center gap-3 mb-4">
               <Rocket className="w-6 h-6 text-teal-400" />
               <h3 className="text-xl font-semibold">BDIX Boost</h3>

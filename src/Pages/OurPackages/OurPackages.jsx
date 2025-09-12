@@ -192,7 +192,7 @@ const OurPackages = () => {
             className="group relative bg-[#1a2238]/80 border border-white/10 
                        rounded-2xl shadow-lg p-8 text-center transition-all duration-500 
                        hover:scale-105 hover:shadow-2xl 
-                       hover:border-indigo-400/40 backdrop-blur-xl"
+                       hover:border-indigo-400/40 backdrop-blur-xl animate-wave"
           >
             {/* Glow Border */}
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-teal-400/20 to-indigo-400/20 opacity-0 group-hover:opacity-100 blur-lg transition duration-500"></div>

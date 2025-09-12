@@ -9,6 +9,7 @@ import OurPackages from "../Pages/OurPackages/OurPackages";
 import CoverageArea from "../Pages/CoverageArea/CoverageArea";
 import Support from "../Pages/Support/Support";
 import About from "../Pages/About/About";
+import BillPay from "../Pages/BillPay/BillPay";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
 { path: "/coverage-area", element: <CoverageArea/> },
 { path: "/support", element: <Support/> },
 { path: "/about", element: <About/> },
+{ path: "/bill-pay", element: <BillPay/> },
     
     ],
   },

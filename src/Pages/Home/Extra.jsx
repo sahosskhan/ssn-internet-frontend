@@ -45,7 +45,7 @@ const Extra = () => {
           {services.map((s, i) => (
             <div
               key={i}
-              className="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center text-white font-semibold hover:scale-[1.05] transition shadow-lg"
+              className="bg-white/10 animate-wave backdrop-blur-md rounded-2xl p-6 text-center text-white font-semibold hover:scale-[1.05] transition shadow-lg"
             >
               {s}
             </div>
@@ -67,7 +67,7 @@ Find answers to common questions about our plans, features, and services. Get qu
           {faqData.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white/10 backdrop-blur-md rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:scale-[1.02] shadow-lg"
+              className="bg-white/10 backdrop-blur-md rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:scale-[1.02] shadow-lg "
               onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
             >
               <div className="flex justify-between items-center">
