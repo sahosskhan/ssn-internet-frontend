@@ -61,7 +61,7 @@ const Home = () => {
         </h1>
         <p className="text-gray-300 max-w-2xl text-lg sm:text-xl  mx-auto leading-relaxed">
           Experience blazing fast internet up to{" "}
-          <span className="text-teal-300 font-semibold">100 Mbps</span>.  
+          <span className="text-teal-300 animate-pulse font-semibold">100 Mbps</span>.  
           Get <b>Free Talktime, Chorki, Bongo, Neeramoy Telemedicine, and Real IP</b> —  
           all with 24/7 dedicated support.
         </p>

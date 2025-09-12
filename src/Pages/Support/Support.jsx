@@ -118,7 +118,7 @@ const Support = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen p-6">
+    <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen px-4 py-16">
       {/* Heading */}
       <header className="text-center mb-16">
         <h1 className="text-5xl sm:text-6xl font-bold mb-4">We’re Here to Help</h1>

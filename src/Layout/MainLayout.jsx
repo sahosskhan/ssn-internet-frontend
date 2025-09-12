@@ -8,7 +8,10 @@ const MainLayout = () => {
     return (
         <div>
             <Navbar/>
-            <Outlet></Outlet>
+          <div className="pt-16">
+              <Outlet></Outlet>
+          </div>
+
             <Footer/>
                <ChatButton/>
         </div>

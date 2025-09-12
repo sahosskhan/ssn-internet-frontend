@@ -60,9 +60,9 @@ const OfferPopup = () => {
     <>
       {/* Offer Popup */}
       {showOffer && (
-        <div className="fixed top-5 sm:top-10 right-2 sm:right-5 z-50 w-[90%] sm:w-80 bg-gradient-to-r from-teal-400 to-indigo-500 text-white rounded-2xl p-4 shadow-lg backdrop-blur-md animate-slideIn">
+        <div className="fixed animate-wave top-5 sm:top-10 right-2 sm:right-5 z-50 w-[90%] sm:w-80 bg-gradient-to-r from-teal-400 to-indigo-500 text-white rounded-2xl p-4 shadow-lg backdrop-blur-md animate-slideIn">
           <div className="flex justify-between items-center">
-            <h3 className="font-bold text-lg sm:text-xl mb-2">🔥 Special Offer!</h3>
+            <h3 className="font-bold text-lg sm:text-xl  mb-2">🔥 Special Offer!</h3>
             <button onClick={handleOfferClose} className="text-white font-bold text-xl">×</button>
           </div>
           <p className="text-sm sm:text-base">Get 50% discount on our every package for first 3 month.</p>

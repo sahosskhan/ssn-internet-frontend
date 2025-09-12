@@ -19,10 +19,10 @@ const BillPay = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen p-6">
+    <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen px-6 py-16">
       
       {/* Heading */}
-      <section className="text-center py-10">
+      <section className="text-center pb-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">
           Bill Payment
         </h1>

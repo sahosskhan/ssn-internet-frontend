@@ -49,10 +49,11 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen">
+    <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 
+    min-h-screen py-16">
 
       {/* Hero Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 text-center">
+      <section className="pb-16 sm:pb-20 px-4 sm:px-6 text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fadeIn">
           About SSN Internet
         </h1>
