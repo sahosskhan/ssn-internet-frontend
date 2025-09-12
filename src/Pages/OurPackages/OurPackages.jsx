@@ -176,10 +176,10 @@ const OurPackages = () => {
    <section className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen py-16 px-6">
       {/* Page Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-white drop-shadow-lg">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
           Our Internet Packages
         </h2>
-        <p className="mt-3 text-lg text-gray-300 max-w-2xl mx-auto">
+        <p className="mt-3 text-lg sm:text-xl  text-gray-300 max-w-2xl mx-auto">
           Choose the best package that fits your lifestyle — fast, reliable, and full of extra benefits.
         </p>
       </div>

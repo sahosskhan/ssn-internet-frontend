@@ -40,7 +40,7 @@ const Extra = () => {
 
       {/* More Services Section */}
       <section className="py-16 px-6">
-        <h2 className="text-5xl font-bold text-center text-white mb-10">Why Choose Us As Your ISP</h2>
+        <h2 className=" text-4xl md:text-5xl font-bold text-center text-white mb-10">Why Choose Us As Your ISP</h2>
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
             <div

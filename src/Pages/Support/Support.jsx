@@ -121,8 +121,8 @@ const Support = () => {
     <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen p-6">
       {/* Heading */}
       <header className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4">We’re Here to Help</h1>
-        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+        <h1 className="text-5xl sm:text-6xl font-bold mb-4">We’re Here to Help</h1>
+        <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
           Choose a support type below or send us a message. Our team is ready to
           assist you 24/7.
         </p>
@@ -150,7 +150,7 @@ const Support = () => {
 
       {/* FAQ Section */}
       <section className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-semibold mb-6 text-center">
+        <h2 className="text-5xl sm:text-6xl font-semibold mb-12 text-center">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">
@@ -168,7 +168,7 @@ const Support = () => {
 
       {/* Contact Form */}
       <section className="mb-20 max-w-2xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-center">Send Us a Message</h2>
+        <h2 className="text-5xl sm:text-6xlfont-semibold mb-12 text-center">Send Us a Message</h2>
         {submitted && (
           <p className="mb-4 text-green-400 font-medium text-center animate-fade-in">
             ✅ Thank you! Your message has been sent.

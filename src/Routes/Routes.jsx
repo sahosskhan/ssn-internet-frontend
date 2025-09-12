@@ -8,6 +8,7 @@ import Service from "../Pages/Service/Service";
 import OurPackages from "../Pages/OurPackages/OurPackages";
 import CoverageArea from "../Pages/CoverageArea/CoverageArea";
 import Support from "../Pages/Support/Support";
+import About from "../Pages/About/About";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: "/service", element: <Service/> },
 { path: "/coverage-area", element: <CoverageArea/> },
 { path: "/support", element: <Support/> },
+{ path: "/about", element: <About/> },
     
     ],
   },

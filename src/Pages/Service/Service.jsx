@@ -7,8 +7,8 @@ const Service = () => {
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-center mb-4">Our Services</h2>
-        <p className="text-lg text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Our Services</h2>
+        <p className="text-lg sm:text-xl  text-center text-gray-300 mb-12 max-w-2xl mx-auto">
           Discover our wide range of digital services designed to keep you connected, entertained, and secured.
         </p>
 

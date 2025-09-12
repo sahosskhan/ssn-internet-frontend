@@ -59,7 +59,7 @@ const Home = () => {
             Stay Connected with SSN Internet
           </span>
         </h1>
-        <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-gray-300 max-w-2xl text-lg sm:text-xl  mx-auto leading-relaxed">
           Experience blazing fast internet up to{" "}
           <span className="text-teal-300 font-semibold">100 Mbps</span>.  
           Get <b>Free Talktime, Chorki, Bongo, Neeramoy Telemedicine, and Real IP</b> —  
@@ -88,7 +88,7 @@ const Home = () => {
         <h2 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-4">
           Recommended Internet Packages
         </h2>
-        <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-300 text-lg sm:text-xl  max-w-2xl mx-auto">
           Choose the best package that fits your lifestyle — fast, reliable, and full of extra benefits.
         </p>
       </section>

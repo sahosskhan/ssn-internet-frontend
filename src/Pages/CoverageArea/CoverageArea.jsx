@@ -657,7 +657,7 @@ const CoverageArea = () => {
       <Toaster position="top-center" reverseOrder={false} />
 
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-4">Coverage Check</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Coverage Check</h2>
         <p className="text-lg text-center text-gray-300 mb-10 max-w-2xl mx-auto">
           Want to know if our service is available in your area? Select Division, District and Upazila to search easily.
         </p>
