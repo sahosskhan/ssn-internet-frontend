@@ -19,8 +19,8 @@ const Home = () => {
       price: "৳1000 / month",
       desc: "Perfect for families and HD streaming. Includes free Talktime, Bongo, Chorki & Real IP.",
       ribbon: "Popular",
-      gradient: "from-teal-300 to-indigo-400",
-      titleColor: "text-teal-300",
+      gradient: "from-yellow-300 to-indigo-400",
+      titleColor: "text-yellow-300",
     },
     {
       name: "Comets",
@@ -122,9 +122,12 @@ const Home = () => {
               </div>
 
               {/* Button fixed bottom */}
-              <button className="mt-5 w-full py-2.5 rounded-full backdrop-blur-md 
-                                 bg-white/10 border border-white/20 text-white font-semibold 
-                                 transition hover:bg-white/20 hover:border-teal-300">
+             {/* Button */}
+               <button
+                className="mt-8 w-full py-3 rounded-full bg-gradient-to-r from-teal-300 to-indigo-400 text-[#0b1320] 
+                           font-bold shadow-md transition-all duration-500 
+                           hover:from-indigo-500 hover:to-teal-400 hover:text-white hover:shadow-2xl hover:-translate-y-1"
+              >
                 Get Started
               </button>
             </div>

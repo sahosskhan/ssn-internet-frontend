@@ -8,8 +8,8 @@ const OfferPopup = () => {
   const [toast, setToast] = useState({ message: "", type: "", visible: false });
 
   // Timers (ms)
-  const offerDelay = 5000;
-  const reappearDelay = 20000;
+  const offerDelay = 3000;
+  const reappearDelay = 10000;
 
   // Storage keys
   const offerDoneKey = "offerDone";
@@ -65,7 +65,7 @@ const OfferPopup = () => {
             <h3 className="font-bold text-lg sm:text-xl mb-2">🔥 Special Offer!</h3>
             <button onClick={handleOfferClose} className="text-white font-bold text-xl">×</button>
           </div>
-          <p className="text-sm sm:text-base">Get 50% extra speed on our FTTH plan for a limited time.</p>
+          <p className="text-sm sm:text-base">Get 50% discount on our every package for first 3 month.</p>
           <div className="flex flex-col sm:flex-row justify-between mt-4 gap-2">
             <button
               onClick={handleOfferAccept}

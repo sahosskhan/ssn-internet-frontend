@@ -4,14 +4,15 @@ import { ChevronDown } from "lucide-react";
 const Extra = () => {
   // FAQ data
   const faqData = [
-    { q: "আপনার সেবার কভারেজ কি আছে?", a: "আমাদের সেবা দেশের অনেক অঞ্চলে পাওয়া যায়।" },
-    { q: "সার্ভিস রিস্টোরেশন কতো সময় লাগে?", a: "সাধারণত ২৪ ঘণ্টার মধ্যে।" },
-    { q: "পেমেন্ট অপশন কি কি?", a: "বিকাশ, নগদ, ব্যাংক ট্রান্সফার সবই পাওয়া যায়।" },
-    { q: "কাস্টমার সাপোর্ট কতো সময় কাজ করে?", a: "২৪/৭ আমাদের টিম সাহায্য করে।" },
-    { q: "ফ্রি ইন্সটলেশন আছে কি?", a: "হ্যাঁ, নির্দিষ্ট এলাকায় ফ্রি ইন্সটলেশন।" },
-    { q: "প্যাকেজ পরিবর্তন সম্ভব কি?", a: "হ্যাঁ, যেকোনো সময় প্যাকেজ পরিবর্তন করতে পারবেন।" },
-    { q: "ইন্টারনেট স্পিড কত?", a: "আপনার এলাকার জন্য নির্ধারিত ১২-২০ Mbps।" },
-    { q: "কানেকশন স্থাপনের জন্য কি লাগবে?", a: "একটি ঠিকানা এবং আইডি ভেরিফিকেশন যথেষ্ট।" },
+{ q: "Is your service coverage available?", a: "Our service is available in many regions across the country." },
+{ q: "How long does service restoration take?", a: "Usually within 24 hours." },
+{ q: "What are the payment options?", a: "We accept bKash, Nagad, and bank transfers." },
+{ q: "When is customer support available?", a: "Our team is available 24/7." },
+{ q: "Is installation free?", a: "Yes, free installation is available in certain areas." },
+{ q: "Can I change my package?", a: "Yes, you can change your package anytime." },
+{ q: "What is the internet speed?", a: "The speed ranges from 12–20 Mbps depending on your area." },
+{ q: "What is required to set up a connection?", a: "Just an address and ID verification are enough." },
+
   ];
 
   const [openIndex, setOpenIndex] = useState(null);

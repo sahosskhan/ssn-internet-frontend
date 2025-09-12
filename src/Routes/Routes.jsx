@@ -7,6 +7,7 @@ import Error from "../Pages/Error/Error";
 import Service from "../Pages/Service/Service";
 import OurPackages from "../Pages/OurPackages/OurPackages";
 import CoverageArea from "../Pages/CoverageArea/CoverageArea";
+import Support from "../Pages/Support/Support";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { path: "/our-packages", element: <OurPackages/> },
       { path: "/service", element: <Service/> },
 { path: "/coverage-area", element: <CoverageArea/> },
+{ path: "/support", element: <Support/> },
     
     ],
   },
