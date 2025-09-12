@@ -16,15 +16,6 @@ const Extra = () => {
 
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Why Choose Us features
-  const features = [
-    "২৪/৭ কাস্টমার সাপোর্ট",
-    "FTTH প্রযুক্তি",
-    "সুরক্ষিত এবং প্রাইভেসি ফ্রেন্ডলি",
-    "স্মার্ট বিল পেমেন্ট সিস্টেম",
-    "ফেসবুক এবং ইউটিউবের জন্য অতিরিক্ত BDIX স্পিড",
-    "সেলফ কেয়ার পোর্টাল",
-  ];
 
   // More services
   const services = [
@@ -36,28 +27,19 @@ const Extra = () => {
     "Gaming Acceleration",
     "IoT Support",
     "Priority Support",
+    "24/7 Support Team",
+    "Extra BDIX Speed",
+    "Smart Bill Payment System",
+     "FTTH Technology",
   ];
 
   return (
     <div>
-          {/* Why Choose Us Section */}
-      <section className="py-16 px-6 bg-gradient-to-b from-[#0b1320] via-[#111b2f] to-[#0b1320]">
-        <h2 className="text-4xl font-bold text-center text-white mb-10">Why Choose Us</h2>
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-          {features.map((f, i) => (
-            <div
-              key={i}
-              className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex items-center justify-center text-white font-medium hover:scale-[1.03] transition shadow-lg"
-            >
-              {f}
-            </div>
-          ))}
-        </div>
-      </section>
+    
 
       {/* More Services Section */}
       <section className="py-16 px-6">
-        <h2 className="text-4xl font-bold text-center text-white mb-10">Our Services</h2>
+        <h2 className="text-5xl font-bold text-center text-white mb-10">Why Choose Us As Your ISP</h2>
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
             <div
@@ -72,8 +54,15 @@ const Extra = () => {
       
       {/* FAQ Section */}
       <section className="py-16 px-6">
-        <h2 className="text-4xl font-bold text-center text-white mb-10">FAQ</h2>
-        <div className="max-w-4xl mx-auto grid gap-4">
+              <section className="text-center ">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+Find answers to common questions about our plans, features, and services. Get quick help with billing, connectivity, and technical support.
+        </p>
+      </section>
+        <div className="max-w-4xl mt-12 mx-auto grid gap-4">
           {faqData.map((item, idx) => (
             <div
               key={idx}

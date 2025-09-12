@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Pages/Shared/Navbar";
 import ChatButton from "../Pages/Home/ChatBtn";
+import Footer from "../Pages/Shared/Footer";
 
 
 const MainLayout = () => {
@@ -8,7 +9,8 @@ const MainLayout = () => {
         <div>
             <Navbar/>
             <Outlet></Outlet>
-            <ChatButton/>
+            <Footer/>
+               <ChatButton/>
         </div>
     );
 };

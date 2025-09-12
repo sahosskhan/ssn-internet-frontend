@@ -3,7 +3,7 @@ import { Server, Tv, Film, Globe, CreditCard, Headphones, Wifi, UserCheck, Shiel
 const Service = () => {
     return (
         <div>
-  <section id="services" className="py-20 bg-gradient-to-b from-[#0b1320] to-[#111b2f] text-white">
+  <section id="services" className="py-20 bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Heading */}

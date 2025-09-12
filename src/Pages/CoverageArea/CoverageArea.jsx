@@ -662,7 +662,7 @@ const CoverageArea = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-[#0b1320] via-[#111b2f] to-[#0b1320] text-white">
+    <section className="py-20 bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen">
       <Toaster position="top-center" reverseOrder={false} />
 
       <div className="max-w-7xl mx-auto px-6">

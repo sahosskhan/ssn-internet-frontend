@@ -173,7 +173,7 @@ const features = [
 
 const OurPackages = () => {
   return (
-   <section className="min-h-screen bg-gradient-to-br from-[#0a0c1e] via-[#141a2d] to-[#0a0c1e] py-16 px-6">
+   <section className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen py-16 px-6">
       {/* Page Heading */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-extrabold text-white drop-shadow-lg">

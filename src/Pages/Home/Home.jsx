@@ -1,5 +1,6 @@
 
 import Extra from "./Extra";
+import Popups from "./Popups";
 
 const Home = () => {
   const packages = [
@@ -53,14 +54,14 @@ const Home = () => {
     <div className="bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] text-gray-100 min-h-screen">
       {/* Hero Heading */}
       <section className="w-full py-14 text-center">
-        <h1 className="text-3xl md:text-4xl font-extrabold mb-6">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-indigo-400 animate-pulse">
             Stay Connected with SSN Internet
           </span>
         </h1>
         <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
           Experience blazing fast internet up to{" "}
-          <span className="text-teal-300 font-semibold">550 Mbps</span>.  
+          <span className="text-teal-300 font-semibold">100 Mbps</span>.  
           Get <b>Free Talktime, Chorki, Bongo, Neeramoy Telemedicine, and Real IP</b> —  
           all with 24/7 dedicated support.
         </p>
@@ -131,7 +132,7 @@ const Home = () => {
         </div>
       </section>
       <Extra/>
-      
+      <Popups/>
     </div>
   );
 };
