@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const menuItems = [
-    { name: "Home", path: "/" },
     { name: "Package", path: "/our-packages" },
     { name: "Service", path: "/service" },
     { name: "Coverage Area", path: "/coverage-area" },
@@ -13,61 +12,70 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed z-10  navbar backdrop-blur bg-[#0a0c1ecc]/90 border-b border-white/10">
-        {/* Navbar Start */}
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn text-white btn-ghost md:hidden lg:hidden xl:hidden"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content text-lg font-bold uppercase bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              {menuItems.map((item, idx) => (
-                <li key={idx}>
-                  <Link
-                    to={item.path}
-                    className="transition-all duration-300 ease-in-out hover:text-teal-400 hover:pl-3 hover:scale-105"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-              <Link
-                to="/connection"
-                className="p-2 mt-2 rounded-full bg-gradient-to-r from-teal-300 to-indigo-400 text-[#0b1320] font-bold shadow-md
-                transition-all duration-300 ease-out
-                hover:from-indigo-500 text-sm hover:to-teal-400 hover:text-white hover:scale-110 hover:shadow-2xl uppercase"
-              >
-                Get A New Connection
-              </Link>
-            </ul>
-          </div>
+      <div className="fixed z-10  navbar backdrop-blur bg-gradient-to-br from-[#0e1026] via-[#1f0b3a] to-[#0b253e] border-b border-white/10">
+  {/* Navbar Start */}
+<div className="navbar-start flex items-center gap-3">
+  <div className="dropdown">
+    <div
+      tabIndex={0}
+      role="button"
+      className="btn text-white btn-ghost md:hidden lg:hidden xl:hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h8m-8 6h16"
+        />
+      </svg>
+    </div>
+    <ul
+      tabIndex={0}
+      className="menu menu-sm dropdown-content text-lg font-bold uppercase bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+    >
+      {menuItems.map((item, idx) => (
+        <li key={idx}>
           <Link
-            to="/"
-            className="p-2 lg:text-lg md:text-lg xl:text-lg rounded-xl bg-gradient-to-br from-purple-600 to-indigo-400 flex items-center justify-center shadow-md font-extrabold text-white"
+            to={item.path}
+            className="transition-all duration-300 ease-in-out hover:text-teal-400 hover:pl-3 hover:scale-105"
           >
-            SSN INTERNET
+            {item.name}
           </Link>
-        </div>
+        </li>
+      ))}
+      <Link
+        to="/connection"
+        className="p-2 mt-2 rounded-full bg-gradient-to-r from-teal-300 to-indigo-400 text-[#0b1320] font-bold shadow-md
+        transition-all duration-300 ease-out
+        hover:from-indigo-500 text-sm hover:to-teal-400 hover:text-white hover:scale-110 hover:shadow-2xl uppercase"
+      >
+        Get A New Connection
+      </Link>
+    </ul>
+  </div>
+
+  {/* Logo + Unique Name */}
+  <Link
+    to="/"
+    className="flex items-center gap-2 px-2 rounded-xl bg-white/90 shadow-md"
+  >
+    <img
+      src="/logo.png" // replace with your actual logo
+      alt="SSN Logo"
+      className="w-12 h-12 object-contain rounded-full"
+    />
+    <span className="text-black font-extrabold text-base tracking-widest  drop-shadow-lg">
+      SSN Internet
+    </span>
+  </Link>
+</div>
 
         {/* Navbar Center */}
         <div className="navbar-center hidden xl:flex">

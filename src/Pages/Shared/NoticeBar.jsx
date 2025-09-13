@@ -2,7 +2,7 @@ import React from "react";
 
 const NoticeBar = () => {
   return (
-    <div className="w-full text-white bg-red-500 pt-4 lg:pb-2 md:pb-2 pb-6 overflow-hidden">
+    <div className="w-full text-white bg-red-500 lg:pt-4 pb-2 overflow-hidden">
       <div className="container mx-auto animate-marquee">
         <div className="flex  items-center space-x-2 whitespace-nowrap">
           {/* Icon */}
