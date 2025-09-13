@@ -22,11 +22,11 @@ const Service = () => {
               <h3 className="text-xl font-semibold">FTP Servers</h3>
             </div>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://ftp1.example.com" className="hover:text-teal-400">📂 ICCFTP</a></li>
-              <li><a href="https://ftp2.example.com" className="hover:text-teal-400">📂 DhakaFilx</a></li>
-              <li><a href="https://ftp3.example.com" className="hover:text-teal-400">📂 CircleFTP</a></li>
-              <li><a href="https://ftp4.example.com" className="hover:text-teal-400">📂 SamFTP</a></li>
-              <li><a href="https://ftp5.example.com" className="hover:text-teal-400">📂 DhakaFTP</a></li>
+              <li><a href="http://10.16.100.244" className="hover:text-teal-400">📂 ICCFTP</a></li>
+              <li><a href="http://172.16.50.4" className="hover:text-teal-400">📂 DhakaFilx</a></li>
+              <li><a href="http://circleftp.net" className="hover:text-teal-400">📂 CircleFTP</a></li>
+              <li><a href="http://172.27.27.84" className="hover:text-teal-400">📂 WowFTP</a></li>
+              <li><a href="http://dhakamovie.com" className="hover:text-teal-400">📂 DhakaFTP</a></li>
             </ul>
           </div>
 
@@ -37,11 +37,11 @@ const Service = () => {
               <h3 className="text-xl font-semibold">Live TV</h3>
             </div>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://livetv1.example.com" className="hover:text-teal-400">📺 BongoBD</a></li>
-              <li><a href="https://livetv2.example.com" className="hover:text-teal-400">📺 BDIX TV</a></li>
-              <li><a href="https://livetv3.example.com" className="hover:text-teal-400">📺 Roarzone TV</a></li>
-              <li><a href="https://livetv4.example.com" className="hover:text-teal-400">📺 Smartbox TV</a></li>
-              <li><a href="https://livetv5.example.com" className="hover:text-teal-400">📺 SSN TV</a></li>
+              <li><a href="https://bongobd.com" className="hover:text-teal-400">📺 BongoBD</a></li>
+              <li><a href="https://iptv.race.net.bd/" className="hover:text-teal-400">📺 BDIX TV</a></li>
+              <li><a href="http://tv.roarzone.info" className="hover:text-teal-400">📺 Roarzone TV</a></li>
+              <li><a href="https://toffeelive.com/en/live" className="hover:text-teal-400">📺 Toffee</a></li>
+              <li><a href="http://tv.roarzone.info" className="hover:text-teal-400">📺 SSN TV</a></li>
             </ul>
           </div>
 
@@ -52,11 +52,11 @@ const Service = () => {
               <h3 className="text-xl font-semibold">OTT Platforms</h3>
             </div>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://ott1.example.com" className="hover:text-teal-400">🎬 Chorki</a></li>
-              <li><a href="https://ott2.example.com" className="hover:text-teal-400">🎬 Bongo</a></li>
-              <li><a href="https://ott3.example.com" className="hover:text-teal-400">🎬 Hoicoi</a></li>
-              <li><a href="https://ott4.example.com" className="hover:text-teal-400">🎬 Bioscope</a></li>
-              <li><a href="https://ott5.example.com" className="hover:text-teal-400">🎬 Toffee</a></li>
+              <li><a href="https://www.chorki.com" className="hover:text-teal-400">🎬 Chorki</a></li>
+              <li><a href="https://bongobd.com" className="hover:text-teal-400">🎬 Bongo</a></li>
+              <li><a href="https://www.hoichoi.tv" className="hover:text-teal-400">🎬 Hoicoi</a></li>
+              <li><a href="https://www.bioscopeplus.com/" className="hover:text-teal-400">🎬 Bioscope+</a></li>
+              <li><a href="https://toffeelive.com" className="hover:text-teal-400">🎬 Toffee</a></li>
             </ul>
           </div>
 

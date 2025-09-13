@@ -2,11 +2,11 @@ import React from "react";
 
 const BillPay = () => {
   const paymentMethods = [
-    { name: "bKash", number: "+8801778030482", logo: "https://i.ibb.co.com/MDPPsP6b/image.png" },
-    { name: "Rocket", number: "+8801778030482", logo: "https://i.ibb.co.com/KckSJ2HP/image.png" },
-    { name: "Nagad", number: "+8801778030482", logo: "https://i.ibb.co.com/5Wcw71Bd/image.png" },
-    { name: "SureCash", number: "+8801778030482", logo: "https://i.ibb.co.com/q3GQ4Q0P/image.png" },
-    { name: "NexusPay", number: "+8801778030482", logo: "https://i.ibb.co.com/YFsjtqcf/image.png" },
+    { name: "bKash", number: "+880 1712-577194", logo: "https://i.ibb.co.com/MDPPsP6b/image.png" },
+    { name: "Rocket", number: "+880 1712-577194", logo: "https://i.ibb.co.com/KckSJ2HP/image.png" },
+    { name: "Nagad", number: "+880 1712-577194", logo: "https://i.ibb.co.com/5Wcw71Bd/image.png" },
+    { name: "SureCash", number: "+880 1712-577194", logo: "https://i.ibb.co.com/q3GQ4Q0P/image.png" },
+    { name: "NexusPay", number: "+880 1712-577194", logo: "https://i.ibb.co.com/YFsjtqcf/image.png" },
   ];
 
   const instructions = [

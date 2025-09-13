@@ -20,7 +20,7 @@ const Footer = () => {
             <Headset className="w-5 h-5" /> Hotline: 16590
           </p>
           <p className="flex items-center gap-2 text-gray-200 mb-1 text-sm md:text-base">
-            <Phone className="w-5 h-5" /> +880 1234 567890
+            <Phone className="w-5 h-5" /> +880 1712-577194
           </p>
           <p className="flex items-center gap-2 text-gray-200 text-sm md:text-base">
             <Mail className="w-5 h-5" /> info@ssninternet.com
@@ -31,10 +31,10 @@ const Footer = () => {
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 md:p-6 shadow-lg hover:scale-105 transition-transform duration-500 flex flex-wrap justify-center gap-4 md:gap-8 animate-wave">
           {[
             { name: "Home", path: "/" },
-            { name: "About", path: "/about" },
             { name: "Career", path: "/career" },
-            { name: "Services", path: "/service" },
             { name: "Coverage Area", path: "/coverage-area" },
+            { name: "Test Your Network Speed", path: "http://www.speedtest.com.sg/" },
+                  { name: "BTRC Approved Tariff", path: "https://www.orbitbd.net/btrc-approved-tariff" },
           ].map((link) => (
             <Link
               key={link.name}
