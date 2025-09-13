@@ -89,7 +89,7 @@ const Navbar = () => {
         {/* Navbar End */}
         <div className="navbar-end">
           <Link
-            to="https://www.facebook.com/sahosskhan/"
+            to="/get-new-connection"
             className="px-4 py-2 rounded-full bg-gradient-to-r from-teal-300 to-indigo-400 text-[#0b1320] font-bold shadow-md
              transition-all duration-300 ease-out
              hover:from-indigo-500 hover:to-teal-400 hover:text-white hover:scale-110 hover:shadow-2xl uppercase hidden md:flex lg:flex xl:flex"
@@ -98,6 +98,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -11,6 +11,7 @@ import Support from "../Pages/Support/Support";
 import About from "../Pages/About/About";
 import BillPay from "../Pages/BillPay/BillPay";
 import CareerPage from "../Pages/CareerPage/CareerPage";
+import GetConnection from "../Pages/GetConnection/GetConnection";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +26,8 @@ export const router = createBrowserRouter([
 { path: "/support", element: <Support/> },
 { path: "/about", element: <About/> },
 { path: "/bill-pay", element: <BillPay/> },
-{ path: "//career", element: <CareerPage/> },
+{ path: "/career", element: <CareerPage/> },
+{ path: "/get-new-connection", element: <GetConnection/> },
     
     ],
   },

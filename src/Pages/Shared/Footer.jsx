@@ -32,7 +32,7 @@ const Footer = () => {
           {[
             { name: "Home", path: "/" },
             { name: "Career", path: "/career" },
-            { name: "Coverage Area", path: "/coverage-area" },
+            { name: "Get New Connection", path: "/get-new-connection" },
             { name: "Test Your Network Speed", path: "http://www.speedtest.com.sg/" },
                   { name: "BTRC Approved Tariff", path: "https://www.orbitbd.net/btrc-approved-tariff" },
           ].map((link) => (
